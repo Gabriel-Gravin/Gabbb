@@ -15,5 +15,5 @@ title: Student Blog
 | 1 | American Literature | Mr. West |
 | 2 | US History | Ms. Ayres |
 | 3 | AP Calculus | Ms. Hightower |
-| 4 | Comp Sci and Soft Engr | Mr. Mortenson |
+| 4 | Comp Sci and Soft Engr | Mr. Mortensen |
 | 5 | Offroll | None |
