@@ -27,3 +27,8 @@ courses: { compsci: {week: 2} }
 
 - Deleted old posts and created new posts in the plan section of the lab notebook and edited these posts.
 - Had to change my theme because it was messing with my website.
+
+# Thursday
+
+- Finished up putting in all my plans for earlier weeks
+- Put in my snake game and changed the inputs to wasd and changed the food to an apple.

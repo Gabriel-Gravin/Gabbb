@@ -3,7 +3,7 @@ toc: true
 comments: false
 layout: post
 title: Plans
-description: Plans
+description: Downloaded the necessary tools
 type: plans
 courses: { compsci: {week: 1} }
 ---
