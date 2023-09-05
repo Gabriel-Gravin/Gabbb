@@ -32,3 +32,8 @@ courses: { compsci: {week: 2} }
 
 - Finished up putting in all my plans for earlier weeks
 - Put in my snake game and changed the inputs to wasd and changed the food to an apple.
+
+# Friday
+
+- Live review
+- 
