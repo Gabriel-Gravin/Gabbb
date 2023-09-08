@@ -11,11 +11,11 @@ courses: { compsci: {week: 3} }
 # Tuesday
 
 - Create week plan
-- Figure out how to create my github.io page and get it running.
+- Figure out how to deploy my github.io page and get it running.
 
 # Wednesday
 
-- Put a calculator into my website.
+- Put a calculator into my website by copying the code into a .md file.
 
 # Thursday
 
@@ -24,3 +24,4 @@ courses: { compsci: {week: 3} }
 # Friday
 
 - Live review
+- Finish up anything I didn't finish for the week
