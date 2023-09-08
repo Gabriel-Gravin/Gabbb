@@ -8,7 +8,6 @@ type: hacks
 courses: { compsci: {week: 3} }
 ---
 
-%%html
 <style>
   .calculator-output {
     /* calulator output 
