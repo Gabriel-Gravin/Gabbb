@@ -19,7 +19,7 @@ courses: { compsci: {week: 3} }
 
 # Thursday
 
-- Make a Jupyter Notebook interaction in VSCode.
+- Make a Jupyter Notebook interaction in VSCode with a table showing different types of ice cream and thier prices.
 
 # Friday
 
