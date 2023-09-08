@@ -16,10 +16,12 @@ courses: { compsci: {week: 3} }
 # Wednesday
 
 - Put a calculator into my website by copying the code into a .md file.
+- Signed up for pair showcase.
 
 # Thursday
 
 - Make a Jupyter Notebook interaction in VSCode with a table showing different types of ice cream and thier prices.
+- Changed snake body so it's different from the food.
 
 # Friday
 

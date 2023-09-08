@@ -1,9 +1,9 @@
 ---
-toc: false
+toc: true
 comments: false
 layout: post
 title: Calculator
-description: An advanced way to deal with different numbers.
+description: Advanced way to handle complex numbers
 type: hacks
 courses: { compsci: {week: 3} }
 ---
@@ -86,7 +86,7 @@ courses: { compsci: {week: 3} }
           } else {
               output.innerHTML = output.innerHTML + value; // concatenation is used to add the numbers to the end of the input
           }
-      } else { // special case for adding a decimal; can not have two decimals
+      } else { // special case for adding a decimal; can't have two decimals
           if (output.innerHTML.indexOf(".") == -1) {
               output.innerHTML = output.innerHTML + value;
               nextReady = false;
@@ -170,11 +170,11 @@ courses: { compsci: {week: 3} }
 <!-- 
 Vanta animations just for fun, load JS onto the page
 -->
-<script src="/student/assets/js/three.r119.min.js"></script>
-<script src="/student/assets/js/vanta.halo.min.js"></script>
-<script src="/student/assets/js/vanta.birds.min.js"></script>
-<script src="/student/assets/js/vanta.net.min.js"></script>
-<script src="/student/assets/js/vanta.rings.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/three.r119.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.halo.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.birds.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.net.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.rings.min.js"></script>
 
 <script>
 // setup vanta scripts as functions

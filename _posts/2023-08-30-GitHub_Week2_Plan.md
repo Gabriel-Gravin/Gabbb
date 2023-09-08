@@ -36,4 +36,3 @@ courses: { compsci: {week: 2} }
 # Friday
 
 - Live review
-- 
