@@ -2,10 +2,10 @@
 toc: true
 comments: false
 layout: post
-title: Calculator
+title: JS Calculator
 description: Advanced way to handle complex numbers
 type: hacks
-courses: { compsci: {week: 3} }
+courses: { compsci: {week: 4} }
 ---
 
 <style>
@@ -52,6 +52,7 @@ courses: { compsci: {week: 3} }
       <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
       <div class="calculator-equals">=</div>
+      <div class="calculator-operation">/</div>
   </div>
 </div>
 
