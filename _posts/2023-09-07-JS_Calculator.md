@@ -53,10 +53,10 @@ courses: { compsci: {week: 4} }
       <div class="calculator-number">9</div>
       <div class="calculator-operation">/</div>
       <!--row 5-->
-      <div class="N/A"></div>
       <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
       <div class="calculator-equals">=</div>
+      <div class="N/A"></div>
   </div>
 </div>
 
