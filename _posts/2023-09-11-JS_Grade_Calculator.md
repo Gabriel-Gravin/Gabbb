@@ -2,8 +2,8 @@
 toc: true
 comments: false
 layout: post
-title: JS Output Calculator
-description: Advanced way to handle complex numbers
+title: JS Grade Calculator
+description: Advanced way to handle your grade in a given class
 type: hacks
 courses: { compsci: {week: 4} }
 ---
