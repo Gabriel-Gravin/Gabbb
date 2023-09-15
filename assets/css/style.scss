@@ -80,6 +80,9 @@
   .calculator-clear {
     @extend .button;
     background-color: #e68b1c;
+
+    grid-column: span 3;
+    grid-row: span 1;
   }
   
   /* styling for the calculator equals button */

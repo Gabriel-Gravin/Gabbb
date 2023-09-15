@@ -21,6 +21,7 @@ courses: { compsci: {week: 4} }
     padding: 0.25em;
     font-size: 20px;
     border: 5px solid black;
+    background-color: #953EF7;
   
     display: flex;
     align-items: center;
@@ -34,8 +35,6 @@ courses: { compsci: {week: 4} }
       <div class="calculator-output" id="output">0</div>
       <!--row 1-->
       <div class="calculator-clear">A/C</div>
-      <div class="N/A"></div>
-      <div class="N/A"></div>
       <div class="calculator-operation">+</div>
       <!--row 2-->
       <div class="calculator-number">1</div>
