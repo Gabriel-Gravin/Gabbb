@@ -31,4 +31,4 @@ courses: { compsci: {week: 4} }
 
 # Friday
 
-- 
+- Added label for each input for the grade calculator.

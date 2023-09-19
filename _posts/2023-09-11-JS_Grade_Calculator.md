@@ -69,9 +69,8 @@ function newInputLine(index) {
     // Add a label for each score element
     var title = document.createElement('label');
     title.htmlFor = index;
-    title.innerHTML = index + ". ";    
+    title.innerHTML = "Grade ";    
     document.getElementById("scores").appendChild(title); // add to HTML
-
     // Setup score element and attributes
     var score = document.createElement("input"); // input element
     score.id =  index;  // id of input element
@@ -90,7 +89,14 @@ function newInputLine(index) {
     document.getElementById(index).focus();
 }
 
+function newInputLine2(assignment_title) {
+    var assignment = document.createElement("input");
+    assignment.id = index;
+}
+
 // Creates 1st input box on Window load
 newInputLine(0);
+
+newInputLine2(0);
 
 </script>
