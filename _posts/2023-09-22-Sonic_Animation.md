@@ -18,6 +18,8 @@ courses: { compsci: {week: 5} }
             <label for="idle">Idle</label><br>
             <input type="radio" name="animation" id="run">
             <label for="run">Run</label><br>
+            <input type="radio" name="animation" id="punch">
+            <label for="punch">Punch</label><br>
         </div>
     </div>
 </body>
@@ -27,9 +29,9 @@ courses: { compsci: {week: 5} }
         const canvas = document.getElementById('spriteContainer');
         const ctx = canvas.getContext('2d');
         const SPRITE_WIDTH = 80;
-        const SPRITE_HEIGHT = 100;
+        const SPRITE_HEIGHT = 102;
         const SCALE_FACTOR = 1;
-        const FRAME_LIMIT = 6;
+        const FRAME_LIMIT = 5;
 
         canvas.width = SPRITE_WIDTH * SCALE_FACTOR;
         canvas.height = SPRITE_HEIGHT * SCALE_FACTOR;
@@ -53,14 +55,14 @@ courses: { compsci: {week: 5} }
             draw(context) {
                 context.drawImage(
                     this.image,
-                    this.frameX * this.spriteWidth,
-                    this.frameY * this.spriteHeight,
-                    this.spriteWidth,
-                    this.spriteHeight,
+                    this.frameX * SPRITE_WIDTH,
+                    this.frameY * SPRITE_HEIGHT,
+                    SPRITE_WIDTH,
+                    SPRITE_HEIGHT,
                     this.x,
                     this.y,
-                    this.width * this.scale,
-                    this.height * this.scale
+                    canvas.width,
+                    canvas.height,
                 );
             }
 
@@ -68,7 +70,7 @@ courses: { compsci: {week: 5} }
                 if (this.frameX < this.maxFrame) {
                     this.frameX++;
                 } else {
-                    this.framex = 0;
+                    this.frameX = 0;
                 }
             }
         }
@@ -81,10 +83,13 @@ courses: { compsci: {week: 5} }
                 const selectedAnimation = event.target.id;
                 switch (selectedAnimation) {
                     case 'idle':
-                        dog.frameY = 0;
+                        sonic.frameY = 0;
                         break;
                     case 'run':
-                        dog.frameY = 1;
+                        sonic.frameY = 1;
+                        break;
+                    case 'punch':
+                        sonic.frameY = 6
                         break;
                     default:
                         break;
@@ -99,7 +104,7 @@ courses: { compsci: {week: 5} }
 
             sonic.update();
 
-            //requestAnimationFrame(animate);
+            requestAnimationFrame(animate);
         }
         animate();
     });
