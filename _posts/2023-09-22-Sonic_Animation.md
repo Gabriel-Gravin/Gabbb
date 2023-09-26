@@ -11,7 +11,7 @@ courses: { compsci: {week: 5} }
 <body>
     <div>
         <canvas id="spriteContainer">
-            <img id="sonicSprite" src="/vscode/Gabbb/images/sonic_spritesheet.jpg">
+            <img id="sonicSprite" src="{{site.baseurl}}/images/sonic_spritesheet.jpg">
         </canvas>
         <div id="controls">
             <input type="radio" name="animation" id="idle" checked>
@@ -26,10 +26,10 @@ courses: { compsci: {week: 5} }
     window.addEventListener('load', function () {
         const canvas = document.getElementById('spriteContainer');
         const ctx = canvas.getContext('2d');
-        const SPRITE_WIDTH = 160;
-        const SPRITE_HEIGHT = 144;
+        const SPRITE_WIDTH = 80;
+        const SPRITE_HEIGHT = 100;
         const SCALE_FACTOR = 1;
-        const FRAME_LIMIT = 10;
+        const FRAME_LIMIT = 6;
 
         canvas.width = SPRITE_WIDTH * SCALE_FACTOR;
         canvas.height = SPRITE_HEIGHT * SCALE_FACTOR;
@@ -73,6 +73,8 @@ courses: { compsci: {week: 5} }
             }
         }
 
+        const sonic = new Sonic();
+
         const controls = document.getElementById('controls');
         controls.addEventListener('click', function (event) {
             if (event.target.tagName === 'INPUT') {
@@ -93,9 +95,11 @@ courses: { compsci: {week: 5} }
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            Sonic.draw(ctx);
+            sonic.draw(ctx);
 
-            Sonic.update();
+            sonic.update();
+
+            //requestAnimationFrame(animate);
         }
         animate();
     });
