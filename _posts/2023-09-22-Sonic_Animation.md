@@ -84,18 +84,23 @@ courses: { compsci: {week: 5} }
                 switch (selectedAnimation) {
                     case 'idle':
                         sonic.frameY = 0;
+                        sonic.maxFrame = 6;
                         break;
                     case 'run':
                         sonic.frameY = 1;
+                        sonic.maxFrame = 2;
                         break;
                     case 'punch':
-                        sonic.frameY = 6
+                        sonic.frameY = 6;
+                        sonic.maxFrame = 7;
                         break;
                     default:
                         break;
                 }
             }
         });
+
+        let framesPerSecond = 10
 
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -104,8 +109,13 @@ courses: { compsci: {week: 5} }
 
             sonic.update();
 
-            requestAnimationFrame(animate);
+             setTimeout(function() {
+        requestAnimationFrame(animate);
+
+        }, 1000 / framesPerSecond);
+
         }
+
         animate();
     });
 </script>
