@@ -28,7 +28,7 @@ courses: { compsci: {week: 5} }
     window.addEventListener('load', function () {
         const canvas = document.getElementById('spriteContainer');
         const ctx = canvas.getContext('2d');
-        const SPRITE_WIDTH = 80;
+        const SPRITE_WIDTH = 76;
         const SPRITE_HEIGHT = 102;
         const SCALE_FACTOR = 1;
         const FRAME_LIMIT = 5;
