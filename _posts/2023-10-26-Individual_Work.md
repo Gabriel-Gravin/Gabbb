@@ -1,3 +1,12 @@
+---
+toc: true
+comments: false
+layout: post
+title: Plans
+description: Plans
+type: plans
+---
+
 ## Issues
 
 Throughout the project I have created issues in order to keep track of progress.
