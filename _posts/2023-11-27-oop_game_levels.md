@@ -1,5 +1,7 @@
 ---
-layout: base
+toc: true
+comments: false
+layout: post
 title: Dynamic Game Levels
 type: hacks
 courses: { compsci: {week: 17} }

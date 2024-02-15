@@ -1,6 +1,9 @@
 ---
-layout: base
+toc: true
+comments: false
+layout: post
 title: Parallax Plan
+description: Plan to create our backgrounds
 type: plans
 courses: { compsci: {week: 13} }
 ---
