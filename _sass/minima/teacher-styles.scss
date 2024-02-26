@@ -1,18 +1,12 @@
----
----
-
-@import "{{ site.theme }}";
-
 // STYLING PREFERNCES for SITE
 // mixin used as a template for buttons
-  @mixin button {
+@mixin button {
     width: auto;
     height: auto;
     border-radius: 10px;
     background-color: #21807c;
     border: 3px solid black;
     font-size: 1.5em;
-    font-family: 'Courier New', monospace;
 
     display: flex;
     justify-content: center;
@@ -56,7 +50,7 @@
   
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* fr is a special unit; learn more here: https://css-tricks.com/introduction-fr-css-unit/  */
-    grid-template-rows: 0.5fr repeat(5, 1fr);
+    grid-template-rows: 0.5fr repeat(4, 1fr);
     gap: 10px 10px;
   }
   
@@ -81,17 +75,11 @@
   .calculator-clear {
     @extend .button;
     background-color: #e68b1c;
-
-    grid-column: span 3;
-    grid-row: span 1;
   }
   
   /* styling for the calculator equals button */
   .calculator-equals {
     @extend .button;
     background-color: #e70f0f;
-
-    grid-column: span 2;
-    grid-row: span 1;
   }
 
